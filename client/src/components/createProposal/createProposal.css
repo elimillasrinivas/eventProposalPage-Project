@@ -1,0 +1,217 @@
+#root{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+.create-praposal-page-bg{
+    background-image: url("../../../public/images/reglogBackground.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+}
+.renderImages, #renderEventImage{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.proposalPostingForm>header{
+    display:flex;
+    color: #FFFF;
+    align-items: center;
+    justify-content: space-between;
+    height:50px;
+    border-bottom:1px solid #919191;
+}
+.proposalPostingForm>header>h3{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+.proposalPostingFormbackSymbol{
+   margin-right: 2%;
+   color:#919191;
+}
+.proposalPostingFormbackSymbol:hover{
+    cursor:pointer;
+    color:red;
+}
+.create-proposal-h3{
+
+    font-family: 'Poppins',sans-serif;
+}
+.proposalPostingForm>header>h3{
+    letter-spacing: 0.78px;
+    color: #393A3B;
+    opacity: 1;
+    margin-left: 38%;
+
+}
+.proposalPostingForm>section{
+    display:flex;
+}
+.proposalPostingForm>section>section{
+    flex:50%;
+    height:500px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.proposalPostingFormBodyLeftPart>section{
+    margin:15px 0px;
+}
+.proposalPostingFormBodyLeftPart>section input{
+    border:1px solid #E5E0E0;
+    color:#010101;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+.proposalPostingFormBodyLeftPart>section input:focus{
+    outline: none;
+    border-color: #4E94F4;
+}
+.proposalPostingFormBodyLeftPart>section select{
+    border:1px solid #E5E0E0;
+    color:#878889;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+.proposalPostingFormBodyLeftPart>section select:focus{
+    outline: none;
+    border-color: #4E94F4;
+}
+.praposal-type-section{
+    margin-right: 20px;
+}
+.proposalPostingFormBodyLeftPart>section textarea{
+    border:1px solid #E5E0E0;
+    color:black;
+    font-family: 'Poppins',sans-serif;
+}
+.proposalPostingFormBodyLeftPart>section textarea:focus{
+    outline: none;
+    border-color: #4E94F4;
+}
+#formDescription{
+    height: 50px;
+}
+.proposalPostingFormBodyLeftPart>section:first-child{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(2){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(2)>section{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(2)>section>select{
+   width:120px;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(3){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(3)>section{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(3)>section>select{
+    width:120px;
+ }
+ .proposalPostingFormBodyLeftPart>section:nth-child(3)>section>input{
+    width:120px;
+ }
+.proposalPostingFormBodyLeftPart>section:nth-child(4){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(4)>section{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyLeftPart>section:nth-child(4)>section>input{
+    width:120px;
+ }
+.proposalPostingFormBodyLeftPart>section:last-child{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyLeftPart>section:last-child>textarea{
+    height: 130px;
+}
+.proposalPostingFormBodyRightPart{
+    border-left: 1px solid #919191;
+}
+.proposalPostingFormBodyRightPart>section{
+    margin:15px 0px;
+}
+.proposalPostingFormBodyRightPart>section input{
+    border:1px solid #E5E0E0;
+    color:#878889
+}
+.proposalPostingFormBodyRightPart>section select{
+    border:1px solid #E5E0E0;
+    color:#878889
+}
+.proposalPostingFormBodyRightPart>section textarea{
+    border:1px solid #E5E0E0;
+    color:#878889;
+    height: 40px
+}
+.proposalPostingFormBodyRightPart>section:nth-child(5){
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormBodyRightPart>section:last-child{
+    display:flex;
+    flex-direction: column;
+}
+.proposalPostingFormFooter{
+    border-top: 1px solid #919191;
+}
+.proposalPostingFormFooter>button{
+   margin: auto;
+   margin-top: 5px;
+   width: 100px;
+   height: 40px;
+   background: #4E94F4 0% 0% no-repeat padding-box;
+   border-radius: 5px;
+   border-style: none;
+   opacity: 1;
+   color: white;
+}
+.proposalPostingFormFooter>button:hover{
+    cursor:pointer;
+}
+.Images{
+    height: 50px;
+}
+.proposalPostingFormBodyRightPart input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .proposalPostingFormBodyRightPart input::before{
+  content: 'Add';
+  display: inline-block;
+  border: 1px solid #4E94F4;
+  padding: 5px 8px;
+  outline: none;
+  color: #4E94F4;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+#events:focus{
+    outline: none;
+    border-color: #4E94F4;
+}
+#foodPreferences:focus{
+    outline: none;
+    border-color: #4E94F4;
+}

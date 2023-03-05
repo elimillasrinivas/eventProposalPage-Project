@@ -1,0 +1,144 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+.sign-in-page{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.signinPageContainer::before{
+    content: '';
+    background-image: url("../../../public/images/reglogBackground.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+.signinPageContainer>img{
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 50px;
+    background-color: white;
+}
+.signinPageContainer>section{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.signinPageContainer>section>h1{
+    position: relative;
+    color:#f7f8f9;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+.signinPageForm{
+    display:flex;
+    flex-direction: column;
+    width:350px;
+    height:auto;
+    margin-top: -45px;
+    background-color: white;
+    border-radius: 8px;
+}
+.signinPageContainerButtonColor{
+    color:#4E94F4;
+}
+
+.signinPageForm>section:first-child{
+    width:325px;
+    border-bottom:1px solid #D1D1D1;
+    padding: 10px;
+    border-top: 8px;
+}
+.signinPageForm>section>button{
+    width:50%;
+    margin-top: 0px;
+    height:30px;
+    border-style: none;
+    opacity: 1;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+   
+}
+.signinPageForm>section>#vendor:nth-child(1){
+    border-right:1px solid #D1D1D1 ;
+}
+
+.signinPageForm>h3{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.signinPageForm>input{
+    margin:10px 20px;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #D1D1D1;
+    font-family: 'Poppins',sans-serif;
+}
+.signinPageForm>input:focus{
+    outline: none;
+    border-color: #4E94F4;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+.signinPageForm>p{
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Poppins',sans-serif;
+    color: #04425A;
+    opacity: 1;
+}
+.signinPageContainer>section>section{
+    margin: 0px 80px;
+}
+.signinPageContainer p{
+    color:#4E94F4;
+    margin-top: 0px;
+    font-family: 'Poppins',sans-serif;
+}
+.signinPageContainer>section>section:first-child>button{
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color:#4E94F4;
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    width:50px;
+}
+.signinPageContainer>section>section:first-child>button:hover{
+    cursor:pointer;
+}
+.signinPageFormButtonSection{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.signinPageFormButtonSection>button:first-child{
+    color:#4E94F4;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+}
+
+.signinPageFormButtonSection>button:hover{
+    cursor:pointer;
+}
+.signinPageFormButtonSection>button:nth-child(2){
+    width: 100px;
+    color:white;
+    background-color: #4E94F4;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins',sans-serif;
+}
