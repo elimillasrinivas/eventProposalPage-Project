@@ -29,7 +29,7 @@ const HeaderDashboard = () => {
         <div>
             <span>{vendorName}</span>
             <button id="logout" onClick={() => {
-                axios.get("http://localhost:8000/vendors/logout", { withCredentials: true }).then(() => {
+                
                     Swal.fire({
                         title: 'Do you want to proceed with logout?',
                         showDenyButton: true,
@@ -38,9 +38,11 @@ const HeaderDashboard = () => {
                         denyButtonText: `No`,
                     }).then((result) => {
                         if (result.isConfirmed) {
+                            axios.get("http://localhost:8000/vendors/logout", { withCredentials: true }).then(() => {
                             navigate("/");
+                                 })
                         }
-                    })
+                   
                 })
             }}>Log out</button>
         </div>
