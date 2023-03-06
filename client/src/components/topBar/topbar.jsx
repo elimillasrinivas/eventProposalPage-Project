@@ -17,7 +17,7 @@ const TopBar = ({ user }) => {
   }
   useEffect(() => { checkSession() }, [])
   const userLogout = () => {
-    axios.get("http://localhost:8000/users/logout", { withCredentials: true }).then((res) => {
+    
       Swal.fire({
         title: 'Do you want to proceed with logout?',
         showDenyButton: true,
@@ -26,9 +26,11 @@ const TopBar = ({ user }) => {
         denyButtonText: `No`,
       }).then((result) => {
         if (result.isConfirmed) {
+          axios.get("http://localhost:8000/users/logout", { withCredentials: true }).then((res) => {
           navigate("/");
+             })
         }
-      })
+     
 
 
     }).catch((e) => { console.log(e) })
